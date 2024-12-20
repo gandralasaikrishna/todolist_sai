@@ -1,0 +1,36 @@
+<p>home works!</p>
+
+<!-- 
+<div *ngFor="let m of  data">
+    {{m}} 
+
+</div> -->
+
+<div>
+<!-- <button  *ngIf="!data" (click)="getdata()">click Here</button> -->
+
+<table *ngIf="data">
+
+
+    <tr>
+        <th>ID</th>
+        <th>title</th>
+        <th>Price</th>
+    </tr>
+
+    <tr *ngFor="let details of data">
+            <td>{{details.id}}</td>
+            <td>{{details.title}}</td>
+            <td>{{details.price}}</td>
+            
+    </tr>
+
+</table>
+
+
+
+</div>
+
+
+
+

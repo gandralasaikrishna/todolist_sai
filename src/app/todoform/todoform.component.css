@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+input{
+    width: 50%;
+    padding:10px;
+    margin-top: 50px;
+}
+
+button{
+    float: right;
+    width: 15%;
+    
+}
+#green{
+    color: white;
+    background-color: green;
+}
+#red{
+    color: white;
+    background-color: red;
+}
+#green, #red{
+    padding: 10px;;
+    margin-right: 5%;
+    margin-top: -38px;
+}
+
+#green:disabled {
+    background-color: rgb(128, 151, 128);
+}
+
+#red:disabled {
+    background-color: rgb(133, 112, 112);
+}

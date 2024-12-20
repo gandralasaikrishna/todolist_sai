@@ -1,0 +1,13 @@
+<h1> Todo form in Angular</h1>
+
+<diV>
+    <label> Add New</label>
+    <input type="text" [(ngModel)]="todoinput">
+</diV>
+    <div>
+        <button id="red" [disabled]="!todoinput.length" (click)="resettask()">Reset </button>
+    </div>
+    <div>
+        <button id="green" [disabled]="!todoinput.length" (click)="addtask()"> Add</button>
+    </div>
+

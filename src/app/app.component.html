@@ -1,0 +1,187 @@
+<!-- City:<input type="text" [(ngModel)]="city">
+<h3>{{city}}</h3>
+<button type="button" (click)="updatebutton()" >reset button</button> -->
+
+<!-- <h1 *ngIf="show" > This is heading 1</h1>
+
+<table border="2px">
+  <tr *ngFor="let m of movies">
+    <td>{{m}}</td>
+
+  </tr>
+</table> -->
+
+
+<!-- // ngif -->
+ <!-- Ex:1 -->
+
+<!-- <h3 *ngIf="!data" else sample> {{data}}</h3>
+<div #sample>
+ <h3>loading.....</h3>
+</div> -->
+
+<!-- Ex:2 -->
+
+<!-- <h3 *ngIf="data; then loaddata; else sample">{{data}}</h3>
+
+<ng-template #sample>
+  <h3>loading....</h3>
+</ng-template>
+
+<ng-template #loaddata>
+  <h3>{{data}}</h3>
+</ng-template> -->
+
+
+<!-- ngFor
+ <table border="2">
+  <tr>
+<td>Id</td>
+    <td>Name</td>
+    <td>age</td>
+    <td>roll</td>
+  </tr>
+ 
+ <tr *ngFor="let m of mydetails;">
+  <td>{{m.id}}</td>
+<td>{{m.name}}</td>
+<td>{{m.age}}</td>
+<td>{{m.roll}}</td>
+
+ </tr>
+  
+ </table>
+ -->
+
+ <!-- ng switch --> 
+<!-- <input type="text" [(ngModel)]="op">
+
+ <div [ngSwitch]="op">
+<div *ngSwitchCase="'+'">{{num1+num2}}</div>
+<div *ngSwitchCase="'-'">{{num1-num2}}</div>
+<div *ngSwitchCase="'*'">{{num1*num2}}</div>
+<div *ngSwitchCase="'/'">{{num1/num2}}</div>
+<div *ngSwitchDefault="">Invalid</div>
+
+ </div> -->
+
+
+
+ <!-- <h1>{{mytitle | titlecase}}</h1>
+
+ <h1>{{mysalary| currency:"INR":"symbol"}}</h1>
+ <h2>{{person1 | json}}</h2>
+
+ <h3>{{date | date:"dd/MM/yyyy"}}</h3> -->
+
+
+<!-- Example of usage in the template -->
+<!-- <p>{{ htmlContent | removeHtmlTags }}</p>  -->
+<!-- ===========> -->
+<!-- custom pipes  -->
+<!-- <h3>{{person| test:wish | titlecase}}</h3> -->
+
+<!-- <input type="text" value="sai123@email.com" placeholder="Enter your email" #e>
+
+<button (click)="updateemail(e.value)" class="one two " id="three" #b>update</button>
+<h3>{{email}}</h3>
+<h3>{{e.type}}</h3>
+<h3>{{e.placeholder}}</h3>
+<h3>{{b.classList}}</h3> -->
+
+<!-- ==> Template reference : -->
+
+<!-- <app-header  [childtitle]="ctitle" [name]="myname" > </app-header> -->
+
+
+<!--Input to way binding we can use -->
+<!-- <input type="text" (input)="updatetext($event)">
+
+{{data12}} -->
+
+<!-- <div> parent component:{{cdata}}</div> -->
+<!-- <button (click)="updatecdata(cdata)">hb</button> -->
+<!-- <app-header (customeve)="cdata=$event"></app-header> -->
+<!-- =========== -->
+
+
+
+<!-- {{child.mydata}}
+<app-header #child></app-header> -->
+
+<!-- <button (click)="getupdate()">click here to get the data from child This is parent component</button> -->
+
+<!-- <div>
+ <div>
+<h3>This is coming by default from child</h3>
+<div>{{datadata}}</div> 
+</div>
+<div>
+<h3>Thsi is 2 way binding</h3>
+<input type="text" [(ngModel)]="datadata">
+</div>
+
+
+
+<div>
+  <div *ngIf="updateddata; else elseBlock">{{updateddata}}</div>
+  <ng-template #elseBlock>{{updateddata1}}</ng-template>
+  </div>
+
+  <div>
+<button type="text" (click)="getalldata()">click here getupdated data</button>
+ </div>
+
+ <button (click)="getupdate()">click here to get child my data info</button>
+
+ <app-header></app-header>
+<button type="reset" value="reset" (click)="getalldata1()">click here to reset everu thing </button> 
+
+ </div> -->
+
+
+ <!-- <div #test>This is Div tag</div> -->
+<!-- 
+ Name:<input type="text" #test>
+<button (click)="changediv()">click</button>
+
+
+
+<p  #p1>This is para 1</p>
+<p #p2>This is para 2</p>
+<p #p3>This is para 3</p>
+
+<h6 #h6>This is heading 1</h6>
+<h6 #h6>This is heading 2</h6>
+<h6 #h6>This is heading 3</h6>
+
+<button (click)="update()">click here</button> -->
+
+
+<!-- routing in angular -->
+
+
+<!-- <app-header> </app-header>
+<router-outlet>
+  
+</router-outlet> -->
+
+
+<!-- <button (click)="myinfo()"> sub</button> <br> <br>
+
+{{data3}}
+
+<div>{{error3}}</div>
+
+
+ <br> <br>
+<button (click)="unsub()"> unsub</button> -->
+
+<app-todoform></app-todoform>
+<app-todolist></app-todolist>
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+h3{
+    text-align: center;
+    color: blue;
+}
+li{
+   
+  
+   width: 50%;
+    text-align: center;
+    padding: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#button{
+    float: right;
+    
+    background-color: rgb(125, 73, 73);
+}
+#button:hover  {
+color: white;
+background-color: rgb(205, 26, 53);
+}
+
+li{
+    border: 2px solid green;
+    padding: 5px;
+
+}
+
+button#button {
+    width: 6%;
+    padding: 0%;
+}
+

@@ -1,0 +1,10 @@
+<h3> Task List</h3>
+
+<ul>
+    <li *ngFor="let todo of this.getdata; index as i">{{todo.task}} <button  (click)="deletetasks(i)"  id="button">&#10060;</button> </li>
+    
+
+
+    
+
+</ul>
